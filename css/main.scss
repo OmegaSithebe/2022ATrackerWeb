@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+:root {
+    --primary-color: #007AF3;
+}
+
+body {
+    background: #f2f2f2;
+    margin: 0;
+    font-family: poppins;
+}
+
+.navbar {
+    background: white;
+    padding: 1em;
+    position: static;
+    margin-left: 0;
+
+    .logo {
+        text-decoration: none;
+        font-weight: 700;
+        color: black;
+        font-size: 1.2em;
+        margin-left: .3em;
+        padding: .3em;
+        
+    }
+
+    .span {
+        color: var(--primary-color);
+    }
+}
+
+nav {
+    //display: none;
+}
+
+.container {
+    display: flex;
+    place-content: space-between;
+}
+
+.moobile-menu {
+    cursor: pointer;
+}
+
+a {
+   color: #444444; 
+}
+
+ul {
+   // list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.left-col {
+    .subhead {
+        text-transform: uppercase;
+        font-weight: bold ;
+        color: gray;
+        letter-spacing: .3em;
+       }
+
+    h2 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+
+
+.top-head {
+    .subhead2 {
+        text-transform: uppercase;
+        font-weight: bold ;
+        color: gray;
+        letter-spacing: .3em;
+       }
+
+    h2 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+.hero-img {
+    width: 100%;
+    margin-top: 3em;
+}s
+
+.features-section {
+    background-color: #20272E;
+    color: white;
+}
+
+ul.features-list {
+    margin: 0;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+
+    li {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 9em;
+        position: relative;
+
+        &:before {
+            content: '';
+            left: -6em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/bullet.svg');
+            background-size: contain;
+            margin-right: 0; 
+        }
+    }
+}
+
+.features-section img {
+    display: none;
+}
+
+.partnership-section {
+    background: var(--primary-color);
+    
+    img {
+        width: 800px;
+        height: 600px;
+        //border: 5px solid #006BD6;
+        //border-radius: 50px;
+        margin-top: -4.5em;
+    }
+}
+
+h2 {
+    font-size: block;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-top: .5em;
+}
+
+input, textarea {
+    width: 300px;
+    height: auto;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+}
+
+iframe {
+    width: 400px;
+    height: 400px;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+}
+
+ul.primary-nav {
+    margin-top: 5em
+}
+
+li {
+
+    a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: .5em;
+        font-size: 1.3em;
+        text-align: right;
+
+        &:hover {
+            font-weight: bold;
+
+        }
+    }
+}
+
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+    .moobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px 0;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: 100px;
+        width: 100px;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: black;
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+
+        li.current a {
+            font-weight: bold;
+        }
+
+        li.go-premium-cta a {
+            color: var(--primary-color);
+            border: 3px solid var(--primary-color);
+            font-weight: bold;
+            border-radius: 5em;
+            margin-top: -.2em;
+
+            &:hover {
+                background: var(--primary-color);
+                color: white;
+
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1080px){
+     .container {
+         width: 1080px;
+         margin: 0 0;
+         padding: 0;
+     }
+
+     section {
+         padding: 10em 4em;
+     }
+
+     .here .container {
+         display: flex;
+         justify-content: space-between;
+
+         .left-col {
+             margin: 3em 3em 0 5em;
+
+             h2 {
+                 font-size: 3em;
+                 width: 90px;
+             }
+         }
+     }
+
+     .hero-img {
+        width: 350px;
+        height: auto;
+        margin-right: 8em;
+    }
+
+    ul.features-list {
+        display: block;
+        margin-left: 5em;
+    
+        li {
+            font-size: 1.4em;
+            
+            &:before {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .features-section {
+        position: relative;
+    }
+    
+    .features-section img {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 550px;
+        bottom: -2em;
+    }
+    
+    .partnership-section {
+
+        display: flex;
+        
+        .beame {
+            width: 100px;
+            height: 100px;
+            margin-left: 0;
+        }
+
+        .matrix {
+            width: 100px;
+            height: 100px;
+            margin-right: 0;
+        }
+
+    }
+
+    .contact-section {
+        position: relative;
+
+        .container-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 45%;
+            height: 100px;
+        }
+
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+

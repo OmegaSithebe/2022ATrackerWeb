@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022ATrackerWeb</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="http://a-tracker.co.za">A-<span>Tracker</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav"> 
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Partnership</a></li>
+                </ul>
+
+                <ul class="secondary-nav"> 
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="http://a-tracker.co.za">Go Website</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <h2 class="subhead">A patner with purpose</h2>
+                <p>We specialize in helping your company by providing a complete platform for total visibility into all your operations.
+                    Our business gives you the tools to manage, tracking & recover your assets with a variety of solutions for all vehicles.
+                    These solutions include functions like fleet managemnt with advanced features, GPS vehicle tracking, & anti-theft.</p>
+
+                    <div class="hero-cta">
+
+                    </div>
+            </div>
+
+            <a class="imge" href="http://a-tracker.co.za"><img src="images/AtrackerBlue.png" class="hero-img" alt="Tracker"></a>
+
+            <!-- <img src="images/AtrackerBlue.png" class="hero-img" alt="Tracker"> -->
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="top-head">
+           <h2 class="subhead2">Innovating to solve our customers' Problems</h2>
+            <ul class="features-list">
+                <li>Efficiency</li>
+                <li>Safety</li>
+                <li>Complaince</li>
+                <li>Security</li>
+            </ul>
+            </div>
+            
+
+            <img src="images/features.jpg" alt="A-Tracker Features">
+        </div>
+    </section>
+
+    <section class="partnership-section">
+        <div class="container">
+            <h2>In Partnership with:</h2>
+
+            <img class="beame" src="images/beame.jpg" alt="Beame Image">
+
+            <img class="matrix" src="images/matrix.jpg" alt="Matrix Image">
+
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="">Massage</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send messgae">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.937427759867!2d28.036717314728914!3d-26.100961166122186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573463106adb9%3A0x16d1c05d1e4b6bed!2s96%20On%20Fourth!5e0!3m2!1sen!2sza!4v1646484033526!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </section> 
+    
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit')
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })   
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        }) 
+    </script>
+
+</body>
+</html>
